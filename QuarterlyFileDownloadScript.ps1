@@ -1,7 +1,7 @@
 # README
 #
-# Use this script to run automate your monthly file download from zipcodedownload.com
-# You can use Task Scheduler tool (built into Microsoft Windows) to run this script after 5th business working day (by 7th of every month) to get the updated monthly file
+# Use this script to run automate your quarterly file download from zipcodedownload.com
+# You can use Task Scheduler tool (built into Microsoft Windows) to run this script after 5th business working day (by 7th of the month) to get the updated quarterly file
 # Refer the url https://zipcodedownload.com/FTPLink to get more details on automating the file download
 # For any queries feel free to reach us at support@zipcodedownload.com
 #
