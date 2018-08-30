@@ -14,6 +14,7 @@ $product = "z5c6combined" #your product name in quotes, here
 $format = "csv" #your desired format in quotes, here
 $userName = "UserName@mail.com" #set your username in quotes, here
 $password = "password" #set your password in quotes, here
+$output = "$($ENV:UserProfile)\Downloads\MonthlyDownload.zip" #set your output file name with full path in quotes, here
 
 $updateFor = "$((Get-Culture).DateTimeFormat.GetAbbreviatedMonthName((Get-Date).Month).ToLower())$((Get-Date).Year)"
 
@@ -21,7 +22,6 @@ $fileName = "$($updateFor)_$($product)_$($format).zip"
 
 $url = "https://zipcodedownload.com/Account/Download/?file=$($fileName)&username=$($userName)&password=$($password)"
 
-$output = "$($ENV:UserProfile)\Downloads\MonthlyDownload.zip" #set your output file name with full path in quotes, here
 $start_time = Get-Date
 
 Invoke-WebRequest -Uri $url -OutFile $output
