@@ -12,12 +12,12 @@
 
 $product = "z5c6combined" #your product name in quotes, here
 $format = "csv" #your desired format in quotes, here
+$userName = "UserName@mail.com" #set your username in quotes, here
+$password = "password" #set your password in quotes, here
+
 $updateFor = "$((Get-Culture).DateTimeFormat.GetAbbreviatedMonthName((Get-Date).Month).ToLower())$((Get-Date).Year)"
 
 $fileName = "$($updateFor)_$($product)_$($format).zip"
-
-$userName = "UserName@mail.com" #set your username in quotes, here
-$password = "password" #set your password in quotes, here
 
 $url = "https://zipcodedownload.com/Account/Download/?file=$($fileName)&username=$($userName)&password=$($password)"
 
